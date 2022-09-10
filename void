@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main(){
+int a=10;
+float b=1.67;
+char c='p';
+
+void *vd;
+vd=&a;
+printf("%d\n",* (int*) vd);
+vd=&b;
+
+printf("%f\n",* (float*) vd);
+vd=&c;
+printf("%c\n",* (char*) vd);
+}
